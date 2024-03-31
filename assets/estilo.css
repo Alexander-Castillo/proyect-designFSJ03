@@ -1,0 +1,54 @@
+.header{
+    /**aun con dudas aqui solo se que flex para llenar el espacio del contenedor y sea adaptable y row para crear filas? **/
+    display: flex, row;
+    /** ajustar contenido al centro **/
+    justify-content: center;
+    background-image: url(https://res.cloudinary.com/dftvvu3m2/image/upload/v1711597319/Project-designFSJ03/fondo_jywtiv.jpg);
+    /** altura y ancho de la caja **/
+    height: 50rem;
+    width: 100%;
+    /* para que no se repita el fondo */
+    background-repeat: no-repeat;
+    /* para que la img fondo cubra todo el contenedor */
+    background-size: cover;
+    /* efecto del fondo de img en movimiento cuando hace scroll */
+    background-attachment: fixed;
+    /* estilo en la forma de la imagen */
+    clip-path: circle(80rem at 50% -35rem) ;
+}
+.jose{
+    border-radius: 50%;
+    height:25rem;
+}
+/** pantallas laptop y monitores */
+@media (max-width: 7992px){
+    .tarjeta{
+        width: 25rem;
+        height: 20rem;
+        right: 12rem;
+        top: 12rem;
+        
+    }
+}
+
+/** media query para pantallas medianas tablets */
+@media (min-width: 576px)and (max-width: 992px){
+    .tarjeta{
+        width: 25rem;
+        height: 20rem;
+        left: 12rem;
+        top: -10rem;
+        
+    }
+}
+
+/** media para solo pantallas de smartphone */
+@media (max-width: 576px) {
+    .tarjeta{
+        width: 25rem;
+        height: 20rem;
+        left: -5px;
+        top: -6rem;
+        
+    }    
+}
