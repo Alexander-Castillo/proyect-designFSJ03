@@ -21,8 +21,9 @@
     height:25rem;
 }
 /** pantallas laptop y monitores */
-@media (max-width: 7992px){
+@media (min-width: 992px){
     .tarjeta{
+        position: relative;
         width: 25rem;
         height: 20rem;
         right: 12rem;
@@ -34,9 +35,10 @@
 /** media query para pantallas medianas tablets */
 @media (min-width: 576px)and (max-width: 992px){
     .tarjeta{
+        position: relative;
         width: 25rem;
         height: 20rem;
-        left: 12rem;
+        right: -8rem;
         top: -10rem;
         
     }
@@ -45,9 +47,10 @@
 /** media para solo pantallas de smartphone */
 @media (max-width: 576px) {
     .tarjeta{
+        position: relative;
         width: 25rem;
         height: 20rem;
-        left: -5px;
+        left: -9px;
         top: -6rem;
         
     }    
